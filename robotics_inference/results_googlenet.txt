@@ -1,0 +1,1742 @@
+imagenet-batch
+  args (7):  0 [./imagenet-batch]  1 [/home/nvidia/ROOMDATA/]  2 [--prototxt=/home/nvidia/Udacity/GoogLeNet/deploy.prototxt]  3 [--model=/home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel]  4 [--labels=/home/nvidia/Udacity/GoogLeNet/labels.txt]  5 [--input_blob=data]  6 [--output_blob=softmax]  
+
+
+imageNet -- loading classification network model from:
+         -- prototxt     /home/nvidia/Udacity/GoogLeNet/deploy.prototxt
+         -- model        /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel
+         -- class_labels /home/nvidia/Udacity/GoogLeNet/labels.txt
+         -- input_blob   'data'
+         -- output_blob  'softmax'
+         -- batch_size   2
+
+[GIE]  TensorRT version 2.1, build 2102
+[GIE]  attempting to open cache file /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel.2.tensorcache
+[GIE]  loading network profile from cache... /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel.2.tensorcache
+[GIE]  platform has FP16 support.
+[GIE]  /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel loaded
+[GIE]  CUDA engine context initialized with 2 bindings
+[GIE]  /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel input  binding index:  0
+[GIE]  /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel input  dims (b=2 c=3 h=224 w=224) size=1204224
+[cuda]  cudaAllocMapped 1204224 bytes, CPU 0x102a00000 GPU 0x102a00000
+[GIE]  /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel output 0 softmax  binding index:  1
+[GIE]  /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel output 0 softmax  dims (b=2 c=5 h=1 w=1) size=40
+[cuda]  cudaAllocMapped 40 bytes, CPU 0x102c00000 GPU 0x102c00000
+/home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel initialized.
+[GIE]  /home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel loaded
+imageNet -- loaded 5 class info entries
+/home/nvidia/Udacity/GoogLeNet/snapshot_iter_2490.caffemodel initialized.
+loaded image  /home/nvidia/ROOMDATA/img_188.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.027695  (DINING ROOM)
+class 0004 - 0.972168  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_188.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_201.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.715820  (DINING ROOM)
+class 0002 - 0.273926  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_201.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_20.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.188110  (DINING ROOM)
+class 0004 - 0.811035  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_20.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_142.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_142.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_161.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_161.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_70.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.293213  (DINING ROOM)
+class 0002 - 0.699219  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_70.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_122.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_122.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_338.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.039795  (BATHROOM)
+class 0001 - 0.084351  (DINING ROOM)
+class 0002 - 0.870605  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_338.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_343.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.408691  (BATHROOM)
+class 0004 - 0.585449  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_343.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_303.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999023  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_303.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_252.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.954590  (BATHROOM)
+class 0001 - 0.010239  (DINING ROOM)
+class 0003 - 0.011009  (KITCHEN)
+class 0004 - 0.018753  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_252.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_151.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_151.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_149.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_149.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_341.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.342285  (BATHROOM)
+class 0004 - 0.650879  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_341.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_43.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999512  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_43.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_165.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.996582  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_165.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_157.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_157.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_119.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.121460  (HALLWAY)
+class 0003 - 0.876465  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_119.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_209.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.025360  (DINING ROOM)
+class 0002 - 0.974609  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_209.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_191.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.182983  (DINING ROOM)
+class 0004 - 0.816895  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_191.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_272.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.017517  (DINING ROOM)
+class 0002 - 0.972168  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_272.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_68.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.580566  (DINING ROOM)
+class 0002 - 0.418213  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_68.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_16.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.096680  (DINING ROOM)
+class 0004 - 0.902832  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_16.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_71.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.602539  (DINING ROOM)
+class 0004 - 0.396484  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_71.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_262.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.981445  (BATHROOM)
+class 0001 - 0.013794  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_262.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_21.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.572754  (DINING ROOM)
+class 0004 - 0.427246  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_21.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_182.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.027344  (DINING ROOM)
+class 0003 - 0.014519  (KITCHEN)
+class 0004 - 0.958008  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_182.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_61.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_61.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_348.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.777344  (BATHROOM)
+class 0004 - 0.220215  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_348.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_89.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.920410  (DINING ROOM)
+class 0002 - 0.079468  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_89.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_190.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.146118  (DINING ROOM)
+class 0004 - 0.854004  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_190.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_315.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.017334  (DINING ROOM)
+class 0002 - 0.982422  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_315.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_136.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.993164  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_136.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_4.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.069275  (DINING ROOM)
+class 0002 - 0.024445  (HALLWAY)
+class 0003 - 0.876465  (KITCHEN)
+class 0004 - 0.024139  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_4.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_284.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.058655  (BATHROOM)
+class 0001 - 0.014015  (DINING ROOM)
+class 0002 - 0.926758  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_284.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_108.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.882324  (DINING ROOM)
+class 0002 - 0.054565  (HALLWAY)
+class 0003 - 0.055756  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_108.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_124.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_124.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_181.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.993164  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_181.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_162.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_162.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_215.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.998047  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_215.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_214.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.040985  (DINING ROOM)
+class 0002 - 0.958984  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_214.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_134.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.687012  (DINING ROOM)
+class 0002 - 0.163818  (HALLWAY)
+class 0003 - 0.115356  (KITCHEN)
+class 0004 - 0.033569  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_134.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_60.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_60.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_319.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_319.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_126.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.012093  (DINING ROOM)
+class 0003 - 0.987305  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_126.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_15.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.082458  (DINING ROOM)
+class 0004 - 0.916504  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_15.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_220.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.317627  (DINING ROOM)
+class 0002 - 0.493652  (HALLWAY)
+class 0003 - 0.181152  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_220.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_130.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.308350  (DINING ROOM)
+class 0003 - 0.665527  (KITCHEN)
+class 0004 - 0.024963  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_130.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_313.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.998047  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_313.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_295.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.996582  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_295.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_152.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_152.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_159.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_159.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_324.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_324.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_270.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.991211  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_270.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_120.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.996094  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_120.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_230.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.300781  (BATHROOM)
+class 0001 - 0.056335  (DINING ROOM)
+class 0002 - 0.055237  (HALLWAY)
+class 0003 - 0.507324  (KITCHEN)
+class 0004 - 0.080444  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_230.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_325.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_325.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_212.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.251465  (DINING ROOM)
+class 0002 - 0.748047  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_212.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_101.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.015305  (DINING ROOM)
+class 0002 - 0.984375  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_101.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_326.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_326.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_300.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.997559  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_300.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_107.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.577148  (DINING ROOM)
+class 0002 - 0.280762  (HALLWAY)
+class 0003 - 0.137329  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_107.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_219.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.265137  (DINING ROOM)
+class 0002 - 0.630859  (HALLWAY)
+class 0003 - 0.096863  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_219.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_290.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.043030  (BATHROOM)
+class 0001 - 0.043518  (DINING ROOM)
+class 0002 - 0.912598  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_290.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_251.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.948242  (BATHROOM)
+class 0003 - 0.014267  (KITCHEN)
+class 0004 - 0.022141  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_251.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_129.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.479004  (DINING ROOM)
+class 0003 - 0.509766  (KITCHEN)
+class 0004 - 0.010117  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_129.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_257.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.792480  (BATHROOM)
+class 0001 - 0.101746  (DINING ROOM)
+class 0003 - 0.024338  (KITCHEN)
+class 0004 - 0.076538  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_257.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_265.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.979004  (BATHROOM)
+class 0001 - 0.014053  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_265.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_90.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.903809  (DINING ROOM)
+class 0002 - 0.096008  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_90.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_19.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.015480  (DINING ROOM)
+class 0004 - 0.983887  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_19.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_238.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.037354  (BATHROOM)
+class 0001 - 0.430664  (DINING ROOM)
+class 0002 - 0.019226  (HALLWAY)
+class 0003 - 0.068359  (KITCHEN)
+class 0004 - 0.444336  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_238.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_0.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.982422  (DINING ROOM)
+class 0002 - 0.014229  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_0.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_234.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.275879  (BATHROOM)
+class 0001 - 0.242798  (DINING ROOM)
+class 0002 - 0.061066  (HALLWAY)
+class 0003 - 0.207275  (KITCHEN)
+class 0004 - 0.212891  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_234.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_288.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.168457  (BATHROOM)
+class 0001 - 0.067932  (DINING ROOM)
+class 0002 - 0.761719  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_288.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_118.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.484619  (HALLWAY)
+class 0003 - 0.507812  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_118.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_35.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.998047  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_35.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_106.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.510742  (DINING ROOM)
+class 0002 - 0.337402  (HALLWAY)
+class 0003 - 0.149536  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_106.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_27.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.042389  (DINING ROOM)
+class 0004 - 0.957520  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_27.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_96.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.994141  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_96.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_261.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.961914  (BATHROOM)
+class 0001 - 0.029343  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_261.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_40.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.990723  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_40.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_228.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.071289  (BATHROOM)
+class 0001 - 0.024277  (DINING ROOM)
+class 0002 - 0.023010  (HALLWAY)
+class 0003 - 0.837891  (KITCHEN)
+class 0004 - 0.043640  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_228.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_33.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.014008  (DINING ROOM)
+class 0004 - 0.985840  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_33.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_31.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.078064  (DINING ROOM)
+class 0004 - 0.921875  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_31.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_22.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.625977  (DINING ROOM)
+class 0004 - 0.373779  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_22.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_263.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.986328  (BATHROOM)
+Image: /home/nvidia/ROOMDATA/img_263.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_178.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.100159  (DINING ROOM)
+class 0004 - 0.899902  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_178.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_109.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.347168  (DINING ROOM)
+class 0002 - 0.144897  (HALLWAY)
+class 0003 - 0.492676  (KITCHEN)
+class 0004 - 0.015129  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_109.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_196.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.013535  (DINING ROOM)
+class 0004 - 0.986328  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_196.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_249.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.853027  (BATHROOM)
+class 0001 - 0.044220  (DINING ROOM)
+class 0003 - 0.014420  (KITCHEN)
+class 0004 - 0.082031  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_249.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_293.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.995605  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_293.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_179.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.030334  (DINING ROOM)
+class 0004 - 0.969727  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_179.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_213.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.133789  (DINING ROOM)
+class 0002 - 0.865723  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_213.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_318.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999023  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_318.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_248.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.854980  (BATHROOM)
+class 0001 - 0.074036  (DINING ROOM)
+class 0002 - 0.026093  (HALLWAY)
+class 0003 - 0.010872  (KITCHEN)
+class 0004 - 0.033936  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_248.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_164.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.999512  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_164.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_173.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.994141  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_173.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_207.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_207.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_7.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.425293  (BATHROOM)
+class 0003 - 0.506836  (KITCHEN)
+class 0004 - 0.062195  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_7.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_114.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.035065  (HALLWAY)
+class 0003 - 0.964355  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_114.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_239.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.059875  (BATHROOM)
+class 0001 - 0.409912  (DINING ROOM)
+class 0002 - 0.073669  (HALLWAY)
+class 0003 - 0.115906  (KITCHEN)
+class 0004 - 0.340820  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_239.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_54.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.533203  (DINING ROOM)
+class 0004 - 0.454346  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_54.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_133.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.325195  (DINING ROOM)
+class 0002 - 0.070679  (HALLWAY)
+class 0003 - 0.483154  (KITCHEN)
+class 0004 - 0.120178  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_133.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_177.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.151001  (DINING ROOM)
+class 0004 - 0.849121  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_177.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_30.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.994629  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_30.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_260.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.971191  (BATHROOM)
+class 0001 - 0.019287  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_260.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_148.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_148.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_113.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.061890  (DINING ROOM)
+class 0002 - 0.110107  (HALLWAY)
+class 0003 - 0.826660  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_113.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_276.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.012444  (BATHROOM)
+class 0001 - 0.063477  (DINING ROOM)
+class 0002 - 0.923828  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_276.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_158.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_158.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_344.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.409668  (BATHROOM)
+class 0004 - 0.586914  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_344.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_154.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_154.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_98.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.992188  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_98.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_287.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.023544  (BATHROOM)
+class 0001 - 0.018936  (DINING ROOM)
+class 0002 - 0.957031  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_287.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_309.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.991211  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_309.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_28.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.047791  (DINING ROOM)
+class 0004 - 0.952148  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_28.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_231.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.365723  (BATHROOM)
+class 0001 - 0.067200  (DINING ROOM)
+class 0002 - 0.018082  (HALLWAY)
+class 0003 - 0.396729  (KITCHEN)
+class 0004 - 0.152466  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_231.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_218.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.992188  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_218.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_308.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.993164  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_308.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_125.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.999512  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_125.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_48.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.035248  (DINING ROOM)
+class 0004 - 0.963867  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_48.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_312.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.995605  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_312.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_145.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_145.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_202.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.077332  (DINING ROOM)
+class 0002 - 0.922363  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_202.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_144.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_144.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_217.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.995605  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_217.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_328.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_328.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_194.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.066345  (DINING ROOM)
+class 0004 - 0.933594  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_194.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_237.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.087891  (BATHROOM)
+class 0001 - 0.406006  (DINING ROOM)
+class 0002 - 0.089355  (HALLWAY)
+class 0003 - 0.202759  (KITCHEN)
+class 0004 - 0.214111  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_237.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_268.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.991211  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_268.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_104.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.040283  (DINING ROOM)
+class 0002 - 0.958984  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_104.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_53.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.586426  (DINING ROOM)
+class 0002 - 0.012672  (HALLWAY)
+class 0004 - 0.394531  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_53.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_189.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.095032  (DINING ROOM)
+class 0004 - 0.904785  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_189.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_336.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.432861  (DINING ROOM)
+class 0002 - 0.561035  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_336.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_141.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_141.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_233.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.432373  (BATHROOM)
+class 0001 - 0.157715  (DINING ROOM)
+class 0002 - 0.057892  (HALLWAY)
+class 0003 - 0.203491  (KITCHEN)
+class 0004 - 0.148682  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_233.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_224.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.014595  (BATHROOM)
+class 0003 - 0.944824  (KITCHEN)
+class 0004 - 0.027176  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_224.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_23.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.619629  (DINING ROOM)
+class 0004 - 0.380371  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_23.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_216.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.994629  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_216.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_111.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.668457  (DINING ROOM)
+class 0002 - 0.011971  (HALLWAY)
+class 0003 - 0.318115  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_111.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_314.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.996094  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_314.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_5.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.032532  (BATHROOM)
+class 0002 - 0.020782  (HALLWAY)
+class 0003 - 0.911621  (KITCHEN)
+class 0004 - 0.025833  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_5.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_99.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.990723  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_99.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_197.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.995605  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_197.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_200.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.960938  (DINING ROOM)
+class 0002 - 0.027237  (HALLWAY)
+class 0004 - 0.011185  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_200.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_269.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.988770  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_269.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_278.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.988770  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_278.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_175.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.011780  (DINING ROOM)
+class 0004 - 0.988281  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_175.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_289.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.224487  (BATHROOM)
+class 0001 - 0.227783  (DINING ROOM)
+class 0002 - 0.544434  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_289.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_245.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.167114  (BATHROOM)
+class 0001 - 0.452881  (DINING ROOM)
+class 0002 - 0.375488  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_245.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_52.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.843750  (DINING ROOM)
+class 0002 - 0.140137  (HALLWAY)
+class 0004 - 0.013649  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_52.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_56.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999512  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_56.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_352.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.979492  (BATHROOM)
+class 0001 - 0.012093  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_352.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_229.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.088135  (BATHROOM)
+class 0001 - 0.028198  (DINING ROOM)
+class 0002 - 0.037048  (HALLWAY)
+class 0003 - 0.796387  (KITCHEN)
+class 0004 - 0.050415  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_229.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_322.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.998535  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_322.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_66.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.041992  (DINING ROOM)
+class 0004 - 0.957520  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_66.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_227.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.036560  (BATHROOM)
+class 0001 - 0.033295  (DINING ROOM)
+class 0002 - 0.026733  (HALLWAY)
+class 0003 - 0.868652  (KITCHEN)
+class 0004 - 0.034607  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_227.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_323.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999023  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_323.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_246.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.207153  (BATHROOM)
+class 0001 - 0.308838  (DINING ROOM)
+class 0002 - 0.480225  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_246.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_97.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.018402  (DINING ROOM)
+class 0002 - 0.979492  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_97.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_221.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.011421  (HALLWAY)
+class 0003 - 0.977051  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_221.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_50.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.668457  (DINING ROOM)
+class 0002 - 0.028244  (HALLWAY)
+class 0004 - 0.296631  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_50.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_267.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.054962  (BATHROOM)
+class 0001 - 0.053314  (DINING ROOM)
+class 0002 - 0.889648  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_267.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_205.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_205.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_350.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.988281  (BATHROOM)
+Image: /home/nvidia/ROOMDATA/img_350.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_63.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_63.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_155.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_155.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_94.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.999512  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_94.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_183.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.339844  (DINING ROOM)
+class 0004 - 0.660156  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_183.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_18.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.025406  (DINING ROOM)
+class 0004 - 0.974121  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_18.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_166.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.999512  (BATHROOM)
+Image: /home/nvidia/ROOMDATA/img_166.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_195.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.995117  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_195.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_72.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.976562  (DINING ROOM)
+class 0004 - 0.021896  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_72.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_316.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.998047  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_316.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_311.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.994141  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_311.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_298.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.015327  (BATHROOM)
+class 0002 - 0.981445  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_298.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_259.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.956055  (BATHROOM)
+class 0001 - 0.029602  (DINING ROOM)
+class 0004 - 0.011421  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_259.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_115.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.108765  (HALLWAY)
+class 0003 - 0.888184  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_115.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_339.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.065857  (BATHROOM)
+class 0001 - 0.019745  (DINING ROOM)
+class 0004 - 0.913574  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_339.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_250.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.917969  (BATHROOM)
+class 0001 - 0.022659  (DINING ROOM)
+class 0003 - 0.010109  (KITCHEN)
+class 0004 - 0.043732  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_250.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_17.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.350342  (DINING ROOM)
+class 0004 - 0.649414  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_17.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_150.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_150.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_93.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.998535  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_93.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_203.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.010757  (DINING ROOM)
+class 0002 - 0.989258  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_203.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_321.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_321.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_170.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_170.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_95.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 1.000000  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_95.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_349.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.722656  (BATHROOM)
+class 0001 - 0.192261  (DINING ROOM)
+class 0002 - 0.038330  (HALLWAY)
+class 0004 - 0.045013  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_349.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_88.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.854004  (DINING ROOM)
+class 0002 - 0.146118  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_88.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_49.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.256104  (DINING ROOM)
+class 0004 - 0.734863  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_49.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_186.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.012337  (DINING ROOM)
+class 0004 - 0.987793  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_186.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_131.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.090820  (DINING ROOM)
+class 0003 - 0.634766  (KITCHEN)
+class 0004 - 0.264893  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_131.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_69.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.184937  (DINING ROOM)
+class 0002 - 0.814453  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_69.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_192.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.330322  (DINING ROOM)
+class 0004 - 0.669922  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_192.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_25.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.562012  (DINING ROOM)
+class 0004 - 0.437744  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_25.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_2.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.978516  (DINING ROOM)
+class 0002 - 0.013443  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_2.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_8.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.824707  (BATHROOM)
+class 0001 - 0.012581  (DINING ROOM)
+class 0002 - 0.079163  (HALLWAY)
+class 0003 - 0.067383  (KITCHEN)
+class 0004 - 0.016159  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_8.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_146.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_146.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_91.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.993652  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_91.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_280.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.991211  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_280.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_121.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.999512  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_121.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_241.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.404297  (BATHROOM)
+class 0001 - 0.269531  (DINING ROOM)
+class 0002 - 0.287842  (HALLWAY)
+class 0003 - 0.018005  (KITCHEN)
+class 0004 - 0.020508  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_241.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_283.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.058472  (BATHROOM)
+class 0001 - 0.012810  (DINING ROOM)
+class 0002 - 0.928223  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_283.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_147.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_147.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_286.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.027664  (BATHROOM)
+class 0001 - 0.015762  (DINING ROOM)
+class 0002 - 0.956055  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_286.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_171.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.999512  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_171.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_332.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_332.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_12.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.027954  (DINING ROOM)
+class 0004 - 0.970215  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_12.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_127.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.015015  (DINING ROOM)
+class 0003 - 0.984863  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_127.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_282.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.042145  (BATHROOM)
+class 0001 - 0.013138  (DINING ROOM)
+class 0002 - 0.944336  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_282.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_242.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.530273  (BATHROOM)
+class 0001 - 0.248047  (DINING ROOM)
+class 0002 - 0.213623  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_242.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_340.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.024078  (BATHROOM)
+class 0004 - 0.975098  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_340.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_208.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_208.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_135.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.931152  (DINING ROOM)
+class 0002 - 0.025513  (HALLWAY)
+class 0003 - 0.041656  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_135.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_47.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.021042  (DINING ROOM)
+class 0004 - 0.978516  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_47.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_264.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.978027  (BATHROOM)
+class 0001 - 0.016342  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_264.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_306.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_306.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_44.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999512  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_44.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_92.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.984863  (DINING ROOM)
+class 0003 - 0.013672  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_92.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_185.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.017380  (DINING ROOM)
+class 0004 - 0.982422  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_185.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_351.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.980469  (BATHROOM)
+class 0004 - 0.017487  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_351.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_138.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_138.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_39.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.012482  (DINING ROOM)
+class 0004 - 0.987305  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_39.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_55.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.026703  (DINING ROOM)
+class 0004 - 0.973145  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_55.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_222.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.989746  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_222.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_347.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.263428  (BATHROOM)
+class 0001 - 0.013084  (DINING ROOM)
+class 0004 - 0.723145  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_347.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_236.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.126953  (BATHROOM)
+class 0001 - 0.321777  (DINING ROOM)
+class 0002 - 0.196533  (HALLWAY)
+class 0003 - 0.234497  (KITCHEN)
+class 0004 - 0.120117  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_236.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_296.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.997070  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_296.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_117.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.241699  (HALLWAY)
+class 0003 - 0.752930  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_117.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_301.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.997559  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_301.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_160.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_160.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_342.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.101929  (BATHROOM)
+class 0004 - 0.894531  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_342.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_103.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.064880  (DINING ROOM)
+class 0002 - 0.934570  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_103.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_116.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.149048  (HALLWAY)
+class 0003 - 0.847656  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_116.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_353.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.098755  (BATHROOM)
+class 0001 - 0.867676  (DINING ROOM)
+class 0002 - 0.029358  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_353.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_206.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999023  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_206.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_67.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.212769  (DINING ROOM)
+class 0004 - 0.785645  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_67.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_38.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.992676  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_38.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_254.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.861328  (BATHROOM)
+class 0001 - 0.080872  (DINING ROOM)
+class 0002 - 0.011101  (HALLWAY)
+class 0003 - 0.016922  (KITCHEN)
+class 0004 - 0.029663  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_254.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_266.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.855957  (BATHROOM)
+class 0001 - 0.091125  (DINING ROOM)
+class 0002 - 0.042664  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_266.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_337.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.021088  (BATHROOM)
+class 0001 - 0.608398  (DINING ROOM)
+class 0002 - 0.366211  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_337.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_232.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.430420  (BATHROOM)
+class 0001 - 0.132202  (DINING ROOM)
+class 0002 - 0.039398  (HALLWAY)
+class 0003 - 0.239868  (KITCHEN)
+class 0004 - 0.157959  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_232.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_299.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.996094  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_299.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_24.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.767578  (DINING ROOM)
+class 0004 - 0.232300  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_24.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_255.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.896484  (BATHROOM)
+class 0001 - 0.065002  (DINING ROOM)
+class 0004 - 0.022675  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_255.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_9.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.791504  (DINING ROOM)
+class 0002 - 0.110229  (HALLWAY)
+class 0003 - 0.028976  (KITCHEN)
+class 0004 - 0.064209  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_9.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_243.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.406006  (BATHROOM)
+class 0001 - 0.310791  (DINING ROOM)
+class 0002 - 0.276611  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_243.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_139.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_139.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_235.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.094116  (BATHROOM)
+class 0001 - 0.368896  (DINING ROOM)
+class 0002 - 0.176636  (HALLWAY)
+class 0003 - 0.228516  (KITCHEN)
+class 0004 - 0.131836  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_235.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_226.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.028198  (BATHROOM)
+class 0001 - 0.034119  (DINING ROOM)
+class 0002 - 0.025711  (HALLWAY)
+class 0003 - 0.882324  (KITCHEN)
+class 0004 - 0.029739  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_226.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_333.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.986328  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_333.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_277.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.033264  (DINING ROOM)
+class 0002 - 0.958496  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_277.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_199.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.957031  (DINING ROOM)
+class 0004 - 0.043030  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_199.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_258.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.902344  (BATHROOM)
+class 0001 - 0.050598  (DINING ROOM)
+class 0004 - 0.035461  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_258.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_176.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.042389  (DINING ROOM)
+class 0004 - 0.957520  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_176.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_26.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.218628  (DINING ROOM)
+class 0004 - 0.781250  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_26.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_273.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.106445  (BATHROOM)
+class 0001 - 0.082458  (DINING ROOM)
+class 0002 - 0.810059  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_273.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_345.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.062500  (BATHROOM)
+class 0004 - 0.937012  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_345.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_198.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.998047  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_198.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_168.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_168.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_34.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.020889  (DINING ROOM)
+class 0004 - 0.979004  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_34.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_204.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 1.000000  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_204.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_244.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.185791  (BATHROOM)
+class 0001 - 0.520020  (DINING ROOM)
+class 0002 - 0.288330  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_244.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_156.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_156.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_110.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.717773  (DINING ROOM)
+class 0002 - 0.029327  (HALLWAY)
+class 0003 - 0.249512  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_110.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_292.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.015686  (BATHROOM)
+class 0001 - 0.023315  (DINING ROOM)
+class 0002 - 0.960449  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_292.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_274.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.047333  (BATHROOM)
+class 0001 - 0.067505  (DINING ROOM)
+class 0002 - 0.884277  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_274.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_37.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999023  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_37.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_211.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.414551  (DINING ROOM)
+class 0002 - 0.584961  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_211.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_100.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.996582  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_100.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_3.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.834473  (DINING ROOM)
+class 0002 - 0.052246  (HALLWAY)
+class 0003 - 0.104492  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_3.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_105.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.523926  (DINING ROOM)
+class 0002 - 0.455078  (HALLWAY)
+class 0003 - 0.018967  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_105.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_62.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_62.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_354.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.011154  (BATHROOM)
+class 0001 - 0.022354  (DINING ROOM)
+class 0002 - 0.966309  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_354.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_330.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_330.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_172.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.022156  (DINING ROOM)
+class 0003 - 0.033203  (KITCHEN)
+class 0004 - 0.944336  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_172.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_174.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.097717  (DINING ROOM)
+class 0004 - 0.902344  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_174.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_57.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_57.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_275.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.015312  (BATHROOM)
+class 0001 - 0.062805  (DINING ROOM)
+class 0002 - 0.921387  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_275.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_169.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_169.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_291.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.033691  (BATHROOM)
+class 0001 - 0.032745  (DINING ROOM)
+class 0002 - 0.933105  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_291.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_32.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.015541  (DINING ROOM)
+class 0004 - 0.984375  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_32.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_329.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_329.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_140.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_140.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_253.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.868164  (BATHROOM)
+class 0001 - 0.076599  (DINING ROOM)
+class 0002 - 0.027313  (HALLWAY)
+class 0004 - 0.018127  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_253.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_1.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.998047  (DINING ROOM)
+Image: /home/nvidia/ROOMDATA/img_1.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_240.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.118652  (BATHROOM)
+class 0001 - 0.405762  (DINING ROOM)
+class 0002 - 0.287354  (HALLWAY)
+class 0003 - 0.127930  (KITCHEN)
+class 0004 - 0.060516  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_240.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_45.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_45.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_14.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.070740  (DINING ROOM)
+class 0004 - 0.928223  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_14.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_64.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.998535  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_64.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_225.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.012352  (BATHROOM)
+class 0001 - 0.022842  (DINING ROOM)
+class 0002 - 0.019257  (HALLWAY)
+class 0003 - 0.925293  (KITCHEN)
+class 0004 - 0.020309  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_225.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_317.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999023  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_317.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_163.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_163.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_320.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 1.000000  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_320.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_331.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_331.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_13.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.022491  (DINING ROOM)
+class 0004 - 0.977051  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_13.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_247.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.204590  (BATHROOM)
+class 0001 - 0.072144  (DINING ROOM)
+class 0002 - 0.721191  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_247.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_271.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.990234  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_271.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_112.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.778320  (DINING ROOM)
+class 0003 - 0.215210  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_112.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_51.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.409424  (DINING ROOM)
+class 0002 - 0.585449  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_51.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_279.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.992188  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_279.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_153.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_153.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_307.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_307.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_102.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.023468  (DINING ROOM)
+class 0002 - 0.976562  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_102.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_285.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.026489  (BATHROOM)
+class 0002 - 0.965332  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_285.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_334.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.017960  (DINING ROOM)
+class 0002 - 0.980469  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_334.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_143.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_143.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_6.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.921875  (BATHROOM)
+class 0003 - 0.031616  (KITCHEN)
+class 0004 - 0.045624  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_6.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_180.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.995117  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_180.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_305.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999512  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_305.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_128.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.213135  (DINING ROOM)
+class 0003 - 0.785645  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_128.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_310.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.013145  (DINING ROOM)
+class 0002 - 0.984863  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_310.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_193.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.150513  (DINING ROOM)
+class 0004 - 0.849609  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_193.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_167.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.998047  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_167.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_132.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.019409  (BATHROOM)
+class 0001 - 0.048004  (DINING ROOM)
+class 0002 - 0.010765  (HALLWAY)
+class 0003 - 0.409668  (KITCHEN)
+class 0004 - 0.512207  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_132.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_335.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.035858  (DINING ROOM)
+class 0002 - 0.963867  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_335.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_223.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.978027  (KITCHEN)
+class 0004 - 0.013504  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_223.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_294.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.994141  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_294.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_137.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 0.997559  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_137.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_123.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0003 - 1.000000  (KITCHEN)
+Image: /home/nvidia/ROOMDATA/img_123.jpg classification: KITCHEN
+loaded image  /home/nvidia/ROOMDATA/img_46.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999023  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_46.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_10.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.011246  (BATHROOM)
+class 0001 - 0.108582  (DINING ROOM)
+class 0004 - 0.871582  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_10.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_73.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.067139  (BATHROOM)
+class 0001 - 0.423584  (DINING ROOM)
+class 0004 - 0.505859  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_73.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_281.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.013550  (BATHROOM)
+class 0002 - 0.979492  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_281.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_59.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_59.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_346.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.135864  (BATHROOM)
+class 0004 - 0.858398  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_346.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_302.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.998047  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_302.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_210.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.515137  (DINING ROOM)
+class 0002 - 0.484131  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_210.jpg classification: DINING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_256.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0000 - 0.876465  (BATHROOM)
+class 0001 - 0.081787  (DINING ROOM)
+class 0004 - 0.026367  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_256.jpg classification: BATHROOM
+loaded image  /home/nvidia/ROOMDATA/img_29.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.014938  (DINING ROOM)
+class 0004 - 0.983887  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_29.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_11.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.042542  (DINING ROOM)
+class 0004 - 0.951172  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_11.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_41.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.998535  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_41.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_65.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.995605  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_65.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_58.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 1.000000  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_58.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_36.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999023  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_36.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_184.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.015305  (DINING ROOM)
+class 0004 - 0.984863  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_184.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_304.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.997559  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_304.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_327.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.999023  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_327.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_187.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0001 - 0.030334  (DINING ROOM)
+class 0004 - 0.969727  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_187.jpg classification: LIVING ROOM
+loaded image  /home/nvidia/ROOMDATA/img_297.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0002 - 0.997070  (HALLWAY)
+Image: /home/nvidia/ROOMDATA/img_297.jpg classification: HALLWAY
+loaded image  /home/nvidia/ROOMDATA/img_42.jpg  (256 x 256)  1048576 bytes
+[cuda]  cudaAllocMapped 1048576 bytes, CPU 0x102e00000 GPU 0x102e00000
+class 0004 - 0.999512  (LIVING ROOM)
+Image: /home/nvidia/ROOMDATA/img_42.jpg classification: LIVING ROOM

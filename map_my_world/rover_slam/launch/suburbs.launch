@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find rover_slam)/launch/world-suburbs.launch" />
+    <include file="$(find rover_slam)/launch/rviz.launch" />
+    <include file="$(find rover_slam)/launch/teleop.launch" />
+    <include file="$(find rover_slam)/launch/mapping.launch" />
+</launch>

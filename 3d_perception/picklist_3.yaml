@@ -1,0 +1,22 @@
+object_list:
+- arm_name: right
+  object_name: snacks
+  pick_pose:
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.4299365282058716
+      y: -0.3063889145851135
+      z: 0.7717546820640564
+  place_pose:
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.0
+      y: -0.71
+      z: 0.605
+  test_scene_num: 3
